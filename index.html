@@ -1522,7 +1522,7 @@ p, li, div, span, h1, h2, h3, h4, h5, h6 {
 
     <!-- Tabs -->
     <div class="flex justify-center gap-2 mb-8 p-1 bg-slate-100 rounded-xl inline-flex mx-auto w-full">
-      <button class="scenario-btn flex-1 py-2 rounded-lg text-sm font-semibold bg-white text-blue-600 shadow-sm transition-all" data-scenario="Stuxnet" onclick="switchScenarioTab('Stuxnet')">Stuxnet</button>
+      <button class="scenario-btn flex-1 py-2 rounded-lg text-sm font-semibold bg-black text-white shadow-sm transition-all" data-scenario="Stuxnet" onclick="switchScenarioTab('Stuxnet')">Stuxnet</button>
 
       <button class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all" data-scenario="Trisis" onclick="switchScenarioTab('Trisis')">Trisis</button>
 
@@ -1536,102 +1536,220 @@ p, li, div, span, h1, h2, h3, h4, h5, h6 {
     </div>
 
     <!-- Content -->
-    <div class="grid lg:grid-cols-2 gap-12">
+    <div class="grid lg:grid-cols-1 gap-12">
 
       <!-- STUXNET -->
       <div id="Stuxnet" class="scenario-tab space-y-8 animate-fade-in">
-        <div>
+        <div class="grid gap-6 items-start">
+        <div class="h-full flex flex-col">
           <h3 class="text-2xl font-bold text-slate-900 mb-2">
             Stuxnet (2010): The Crossing of the Rubicon
           </h3>
-          <p class="text-slate-600">
+          <p class="text-slate-600" style="color:#e5e7eb">
             Stuxnet was the first known cyber weapon to cause physical destruction of industrial systems.
           </p>
-          <img src="image.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-          <audio controls>
-            <source src="Media1.m4a" type="audio/mp4">
+          
+        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cb278de9-9757-4473-a638-5c1603b4dd6b">Some quiz</a>
+        <div>
+            <audio controls class="w-full">
+            <source src="Stuxnet.m4a" type="audio/mp4">
             
             <!-- Fallback text for browsers that do not support the audio element -->
             Your browser does not support the audio element.
         </audio>
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cb278de9-9757-4473-a638-5c1603b4dd6b">Some quiz</a>
         </div>
+          
+        </div>
+        <div>
+            <img src="STUXNET.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
+            <audio controls class="w-full">
+            <source src="Stuxnet.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+      </div>
       </div>
 
       <!-- TRISIS -->
-      <div id="Trisis" class="scenario-tab hidden space-y-8 animate-fade-in">
-        <div>
+      <div id="Trisis" class="scenario-tab space-y-8 animate-fade-in">
+        <div class="grid gap-6 items-start">
+        <div class="h-full flex flex-col">
           <h3 class="text-2xl font-bold text-slate-900 mb-2">
             TRISIS (2017): Safety Systems Targeted
           </h3>
-          <p class="text-slate-600">
+          <p class="text-slate-600" style="color:#e5e7eb">
             TRISIS compromised industrial safety controllers, creating the risk of catastrophic failure.
           </p>
+          
+        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cb278de9-9757-4473-a638-5c1603b4dd6b">Quiz</a>
+        <div>
+            <audio controls class="w-full">
+            <source src="Trisis_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+        
+          
+        </div>
+        <div>
+            <img src="TRISIS.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
+            <audio controls class="w-full">
+            <source src="Trisis.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
         </div>
       </div>
-
-      <div id="Trisis" class="scenario-tab hidden space-y-8 animate-fade-in">
-        <div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            TRISIS (2017): Safety Systems Targeted
-          </h3>
-          <p class="text-slate-600">
-            TRISIS compromised industrial safety controllers, creating the risk of catastrophic failure.
-          </p>
-        </div>
-      </div><!-- PIPEDREAM -->
-      <div id="Pipedream" class="scenario-tab hidden space-y-8 animate-fade-in">
-        <div>
+      </div>
+      
+      <!-- PIPEDREAM -->
+        <div id="Pipedream" class="scenario-tab space-y-8 animate-fade-in">
+        <div class="grid gap-6 items-start">
+        <div class="h-full flex flex-col">
           <h3 class="text-2xl font-bold text-slate-900 mb-2">
             Pipedream (2022): Modular ICS Attack Framework
           </h3>
-          <p class="text-slate-600">
+          <p class="text-slate-600" style="color:#e5e7eb">
             Pipedream is a highly adaptable ICS malware framework capable of targeting multiple vendors.
           </p>
+          
+        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cfa8d7db-f495-4b73-80f3-292c23985ce5">Quiz</a>
+        <div>
+            <audio controls class="w-full">
+            <source src="Pipedream_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
         </div>
+        
+          
+        </div>
+        <div>
+            <img src="PIPEDREAM.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
+            <audio controls class="w-full">
+            <source src="Pipedream_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+      </div>
       </div>
 
       <!-- CRUCIBLE -->
-      <div id="Crucible" class="scenario-tab hidden space-y-8 animate-fade-in">
-        <div>
+      <div id="Crucible" class="scenario-tab space-y-8 animate-fade-in">
+        <div class="grid gap-6 items-start">
+        <div class="h-full flex flex-col">
           <h3 class="text-2xl font-bold text-slate-900 mb-2">
             Project Crucible: Long-Term Industrial Espionage
           </h3>
-          <p class="text-slate-600">
+          <p class="text-slate-600" style="color:#e5e7eb">
             Crucible focused on reconnaissance and persistence inside critical infrastructure networks.
           </p>
+          
+        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=e8d27cfa-8a11-4474-9ff2-06aff1ed7897">Quiz</a>
+        <div>
+            <audio controls class="w-full">
+            <source src="Crucible_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
         </div>
+        
+          
+        </div>
+        <div>
+            <img src="CRUCIBLE.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
+            <audio controls class="w-full">
+            <source src="Crucible_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+      </div>
       </div>
 
       <!-- ALIQUIPPA -->
-      <div id="Aliquippa" class="scenario-tab hidden space-y-8 animate-fade-in">
-        <div>
+      <div id="Aliquippa" class="scenario-tab space-y-8 animate-fade-in">
+        <div class="grid gap-6 items-start">
+        <div class="h-full flex flex-col">
           <h3 class="text-2xl font-bold text-slate-900 mb-2">
             Aliquippa Steel Mill Attack (2015)
           </h3>
-          <p class="text-slate-600">
+          <p class="text-slate-600" style="color:#e5e7eb">
             A cyberattack prevented a blast furnace from shutting down safely, causing major physical damage.
           </p>
+          
+        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=2541cbf4-e473-4a60-9bf6-a2312e8fc1b4">Quiz</a>
+        <div>
+            <audio controls class="w-full">
+            <source src="Aliquippa_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
         </div>
+        
+          
+        </div>
+        <div>
+            <img src="ALIQUIPPA.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
+            <audio controls class="w-full">
+            <source src="Aliquippa_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+      </div>
       </div>
 
       <!-- ACENSION -->
-      <div id="Acension" class="scenario-tab hidden space-y-8 animate-fade-in">
-        <div>
+      <div id="Acension" class="scenario-tab space-y-8 animate-fade-in">
+        <div class="grid gap-6 items-start">
+        <div class="h-full flex flex-col">
           <h3 class="text-2xl font-bold text-slate-900 mb-2">
             Ascension Healthcare Ransomware (2021)
           </h3>
-          <p class="text-slate-600">
+          <p class="text-slate-600" style="color:#e5e7eb">
             Ransomware disrupted hospital operations and critical patient care systems across the US.
           </p>
+          
+        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=c238798b-9010-41cd-94f7-720e201e5f11">Quiz</a>
+        <div>
+            <audio controls class="w-full">
+            <source src="Acension_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
         </div>
+        
+          
+        </div>
+        <div>
+            <img src="ACENSION.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
+            <audio controls class="w-full">
+            <source src="Acension_PM.m4a" type="audio/mp4">
+            
+            <!-- Fallback text for browsers that do not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+      </div>
       </div>
 
     </div>
   </div>
 </section>
-
-
 
 <!-- Footer -->
 <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
@@ -2065,7 +2183,7 @@ p, li, div, span, h1, h2, h3, h4, h5, h6 {
 
         // Remove active styles from all buttons
         document.querySelectorAll('.scenario-btn').forEach(btn => {
-          btn.classList.remove('bg-white', 'text-blue-600', 'shadow-sm');
+          btn.classList.remove('bg-black', 'text-white', 'shadow-sm');
           btn.classList.add('text-slate-600');
         });
 
@@ -2074,7 +2192,7 @@ p, li, div, span, h1, h2, h3, h4, h5, h6 {
 
         // Activate selected button
         const activeBtn = document.querySelector(`[data-scenario="${tabId}"]`);
-        activeBtn.classList.add('bg-white', 'text-blue-600', 'shadow-sm');
+        activeBtn.classList.add('bg-black', 'text-white', 'shadow-sm');
         activeBtn.classList.remove('text-slate-600');
       }
     </script>
