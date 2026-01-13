@@ -1537,216 +1537,277 @@ p, li, div, span, h1, h2, h3, h4, h5, h6 {
 
     <!-- Content -->
     <div class="grid lg:grid-cols-1 gap-12">
-
-      <!-- STUXNET -->
-      <div id="Stuxnet" class="scenario-tab space-y-8 animate-fade-in">
-        <div class="grid gap-6 items-start">
-        <div class="h-full flex flex-col">
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            Stuxnet (2010): The Crossing of the Rubicon
-          </h3>
-          <p class="text-slate-600" style="color:#e5e7eb">
-            Stuxnet was the first known cyber weapon to cause physical destruction of industrial systems.
-          </p>
-          
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cb278de9-9757-4473-a638-5c1603b4dd6b">Quiz</a>
-        <div>
-            <audio controls class="w-full">
-            <source src="Stuxnet.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-          
-        </div>
-        <div>
-            <img src="STUXNET.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-            <audio controls class="w-full">
-            <source src="Stuxnet.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-      </div>
-      </div>
-
-      <!-- TRISIS -->
-      <div id="Trisis" class="scenario-tab space-y-8 animate-fade-in">
-        <div class="grid gap-6 items-start">
-        <div class="h-full flex flex-col">
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            TRISIS (2017): Safety Systems Targeted
-          </h3>
-          <p class="text-slate-600" style="color:#e5e7eb">
-            TRISIS compromised industrial safety controllers, creating the risk of catastrophic failure.
-          </p>
-          
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cb278de9-9757-4473-a638-5c1603b4dd6b">Quiz</a>
-        <div>
-            <audio controls class="w-full">
-            <source src="Trisis_PM.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-        
-          
-        </div>
-        <div>
-            <img src="TRISIS.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-            <audio controls class="w-full">
-            <source src="Trisis.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-      </div>
-      </div>
       
-      <!-- PIPEDREAM -->
-        <div id="Pipedream" class="scenario-tab space-y-8 animate-fade-in">
-        <div class="grid gap-6 items-start">
-        <div class="h-full flex flex-col">
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            Pipedream (2022): Modular ICS Attack Framework
-          </h3>
-          <p class="text-slate-600" style="color:#e5e7eb">
-            Pipedream is a highly adaptable ICS malware framework capable of targeting multiple vendors.
-          </p>
-          
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cfa8d7db-f495-4b73-80f3-292c23985ce5">Quiz</a>
-        <div>
-            <audio controls class="w-full">
-            <source src="Pipedream_PM.m4a" type="audio/mp4">
+        <!-- STUXNET -->
+        <div id="Stuxnet" class="main-tab scenario-tab space-y-8 animate-fade-in">
+            <div class="grid gap-6 items-start">
+            <div class="h-full flex flex-col">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">
+                Stuxnet (2010): The Crossing of the Rubicon
+              </h3>
+              <p class="text-slate-600" style="color:#e5e7eb">
+                Stuxnet was the first known cyber weapon to cause physical destruction of industrial systems.
+              </p>
+                    <!-- Scenario / Post-Mortem Toggle -->
+                    <div class="flex gap-2 mb-6 p-1 bg-slate-700 rounded-xl w-fit">
+                      <button
+                        class="stuxnet-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="Scenario" data-scenario="Stuxnet"onclick="switchSubTab(this)">Scenario</button>
+                      <button
+                        class="stuxnet-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="PostMortem" data-scenario="Stuxnet"onclick="switchSubTab(this)">Post-Mortem</button>
+                    </div>
+                    <div id="Stuxnet-Scenario" class="stuxnet-subtab space-y-6">
+                      <img src="STUXNET.png" class="w-full rounded-lg border border-slate-200 shadow-sm">
+                      
+                      <audio controls class="w-full">
+                        <source src="Stuxet.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                    <div id="Stuxnet-PostMortem" class="stuxnet-subtab space-y-6 hidden">
+                      <a
+                        href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=bad43052-e9d6-42b1-a604-84a37f09ad99"
+                        target="_blank"
+                        class="inline-block text-sm font-semibold text-blue-400 hover:underline"
+                      >
+                        Open NotebookLM Quiz →
+                      </a>
+
+                      <img src="STUXNET_PM.PNG" class="w-full rounded-lg border border-slate-200 shadow-sm">
+
+                      <audio controls class="w-full">
+                        <source src="Stuxnet_PM.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+             </div>
+          </div>
+
+
+        <!-- TRISIS -->
+        <div id="Trisis" class="main-tab hidden space-y-8 animate-fade-in">
+          <div class="grid gap-6 items-start">
+          <div class="h-full flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              TRISIS (2017): Safety Systems Targeted
+            </h3>
+            <p class="text-slate-600" style="color:#e5e7eb">
+              TRISIS compromised industrial safety controllers, creating the risk of catastrophic failure.
+            </p>
             
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
+              <!-- Scenario / Post-Mortem Toggle -->
+                    <div class="flex gap-2 mb-6 p-1 bg-slate-700 rounded-xl w-fit">
+                      <button
+                        class="trisis-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="Scenario" data-scenario="Trisis" onclick="switchSubTab(this)">Scenario</button>
+                      <button
+                        class="trisis-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="PostMortem" data-scenario="Trisis"onclick="switchSubTab(this)">Post-Mortem</button>
+                    </div>
+                    <div id="Trisis-Scenario" class="trisis-subtab space-y-6">
+                      <img src="TRISIS.png" class="w-full rounded-lg border border-slate-200 shadow-sm">
+                      
+                      <audio controls class="w-full">
+                        <source src="Trisis.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                    <div id="Trisis-PostMortem" class="trisis-subtab space-y-6 hidden">
+                      <a
+                        href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cfa8d7db-f495-4b73-80f3-292c23985ce5"
+                        target="_blank"
+                        class="inline-block text-sm font-semibold text-blue-400 hover:underline"
+                      >
+                        Open NotebookLM Quiz →
+                      </a>
+
+                      <img src="TRISIS_PM.PNG" class="w-full rounded-lg border border-slate-200 shadow-sm">
+
+                      <audio controls class="w-full">
+                        <source src="Trisis_PM.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+            </div>
         </div>
         
-          
-        </div>
-        <div>
-            <img src="PIPEDREAM.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-            <audio controls class="w-full">
-            <source src="Pipedream_PM.m4a" type="audio/mp4">
+        <!-- PIPEDREAM -->
+        <div id="Pipedream" class="main-tab hidden space-y-8 animate-fade-in">
+          <div class="grid gap-6 items-start">
+          <div class="h-full flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              Pipedream (2022): Modular ICS Attack Framework
+            </h3>
+            <p class="text-slate-600" style="color:#e5e7eb">
+              Pipedream is a highly adaptable ICS malware framework capable of targeting multiple vendors.
+            </p>
             
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-      </div>
-      </div>
+            <!-- Scenario / Post-Mortem Toggle -->
+                    <div class="flex gap-2 mb-6 p-1 bg-slate-700 rounded-xl w-fit">
+                      <button
+                        class="pipedream-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="Scenario" data-scenario="Pipedream"onclick="switchSubTab(this)">Scenario</button>
+                      <button
+                        class="pipedream-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="PostMortem" data-scenario="Pipedream"onclick="switchSubTab(this)">Post-Mortem</button>
+                    </div>
+                    <div id="Pipedream-Scenario" class="pipedream-subtab space-y-6">
+                      <img src="PIPEDREAM.png" class="w-full rounded-lg border border-slate-200 shadow-sm">
+                      
+                      <audio controls class="w-full">
+                        <source src="Pipedream.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                    <div id="Pipedream-PostMortem" class="pipedream-subtab space-y-6 hidden">
+                      <a
+                        href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=e8d27cfa-8a11-4474-9ff2-06aff1ed7897"
+                        target="_blank"
+                        class="inline-block text-sm font-semibold text-blue-400 hover:underline"
+                      >
+                        Open NotebookLM Quiz →
+                      </a>
 
-      <!-- CRUCIBLE -->
-      <div id="Crucible" class="scenario-tab space-y-8 animate-fade-in">
-        <div class="grid gap-6 items-start">
-        <div class="h-full flex flex-col">
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            Project Crucible: Long-Term Industrial Espionage
-          </h3>
-          <p class="text-slate-600" style="color:#e5e7eb">
-            Crucible focused on reconnaissance and persistence inside critical infrastructure networks.
-          </p>
-          
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=e8d27cfa-8a11-4474-9ff2-06aff1ed7897">Quiz</a>
-        <div>
-            <audio controls class="w-full">
-            <source src="Crucible_PM.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-        
-          
-        </div>
-        <div>
-            <img src="CRUCIBLE.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-            <audio controls class="w-full">
-            <source src="Crucible_PM.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-      </div>
-      </div>
+                      <img src="PIPEDREAM_PM.PNG" class="w-full rounded-lg border border-slate-200 shadow-sm">
 
-      <!-- ALIQUIPPA -->
-      <div id="Aliquippa" class="scenario-tab space-y-8 animate-fade-in">
-        <div class="grid gap-6 items-start">
-        <div class="h-full flex flex-col">
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            Aliquippa Steel Mill Attack (2015)
-          </h3>
-          <p class="text-slate-600" style="color:#e5e7eb">
-            A cyberattack prevented a blast furnace from shutting down safely, causing major physical damage.
-          </p>
-          
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=2541cbf4-e473-4a60-9bf6-a2312e8fc1b4">Quiz</a>
-        <div>
-            <audio controls class="w-full">
-            <source src="Aliquippa_PM.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-        
-          
-        </div>
-        <div>
-            <img src="ALIQUIPPA.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-            <audio controls class="w-full">
-            <source src="Aliquippa_PM.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-      </div>
-      </div>
+                      <audio controls class="w-full">
+                        <source src="Pipedream_PM.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+              </div>
+          </div>
 
-      <!-- ACENSION -->
-      <div id="Acension" class="scenario-tab space-y-8 animate-fade-in">
-        <div class="grid gap-6 items-start">
-        <div class="h-full flex flex-col">
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">
-            Ascension Healthcare Ransomware (2021)
-          </h3>
-          <p class="text-slate-600" style="color:#e5e7eb">
-            Ransomware disrupted hospital operations and critical patient care systems across the US.
-          </p>
-          
-        <a href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=c238798b-9010-41cd-94f7-720e201e5f11">Quiz</a>
-        <div>
-            <audio controls class="w-full">
-            <source src="Acension_PM.m4a" type="audio/mp4">
+        <!-- CRUCIBLE -->
+        <div id="Crucible" class="main-tab hidden space-y-8 animate-fade-in">
+          <div class="grid gap-6 items-start">
+          <div class="h-full flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              Project Crucible: Long-Term Industrial Espionage
+            </h3>
+            <p class="text-slate-600" style="color:#e5e7eb">
+              Crucible focused on reconnaissance and persistence inside critical infrastructure networks.
+            </p>
             
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-        
-          
-        </div>
-        <div>
-            <img src="ACENSION.png" class="w-full rounded-lg border border-slate-200 shadow-sm mt-4">
-            <audio controls class="w-full">
-            <source src="Acension_PM.m4a" type="audio/mp4">
-            
-            <!-- Fallback text for browsers that do not support the audio element -->
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-      </div>
-      </div>
+          <!-- Scenario / Post-Mortem Toggle -->
+                    <div class="flex gap-2 mb-6 p-1 bg-slate-700 rounded-xl w-fit">
+                      <button
+                        class="crucible-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="Scenario" data-scenario="Crucible"onclick="switchSubTab(this)">Scenario</button>
+                      <button
+                        class="crucible-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="PostMortem" data-scenario="Crucible"onclick="switchSubTab(this)">Post-Mortem</button>
+                    </div>
+                    <div id="Crucible-Scenario" class="crucible-subtab space-y-6">
+                      <img src="CRUCIBLE.png" class="w-full rounded-lg border border-slate-200 shadow-sm">
+                      
+                      <audio controls class="w-full">
+                        <source src="Crucible.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                    <div id="Crucible-PostMortem" class="crucible-subtab space-y-6 hidden">
+                      <a
+                        href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=cb278de9-9757-4473-a638-5c1603b4dd6b"
+                        target="_blank"
+                        class="inline-block text-sm font-semibold text-blue-400 hover:underline"
+                      >
+                        Open NotebookLM Quiz →
+                      </a>
 
+                      <img src="CRUCIBLE_PM.PNG" class="w-full rounded-lg border border-slate-200 shadow-sm">
+
+                      <audio controls class="w-full">
+                        <source src="Crucible_PM.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+              </div>
+          </div>
+
+        <!-- ALIQUIPPA -->
+        <div id="Aliquippa" class="main-tab scenario5-tab space-y-8 animate-fade-in hidden">
+          <div class="grid gap-6 items-start">
+          <div class="h-full flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              Aliquippa Steel Mill Attack (2015)
+            </h3>
+            <p class="text-slate-600" style="color:#e5e7eb">
+              A cyberattack prevented a blast furnace from shutting down safely, causing major physical damage.
+            </p>
+            
+          <!-- Scenario / Post-Mortem Toggle -->
+                    <div class="flex gap-2 mb-6 p-1 bg-slate-700 rounded-xl w-fit">
+                      <button
+                        class="aliquippa-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="Scenario" data-scenario="Aliquippa"onclick="switchSubTab(this)">Scenario</button>
+                      <button
+                        class="aliquippa-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="PostMortem" data-scenario="Aliquippa"onclick="switchSubTab(this)">Post-Mortem</button>
+                    </div>
+                    <div id="Aliquippa-Scenario" class="aliquippa-subtab space-y-6">
+                      <img src="ALIQUIPPA.png" class="w-full rounded-lg border border-slate-200 shadow-sm">
+                      
+                      <audio controls class="w-full">
+                        <source src="Aliquippa.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                    <div id="Aliquippa-PostMortem" class="aliquippa-subtab space-y-6 hidden">
+                      <a
+                        href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=2541cbf4-e473-4a60-9bf6-a2312e8fc1b4"
+                        target="_blank"
+                        class="inline-block text-sm font-semibold text-blue-400 hover:underline"
+                      >
+                        Open NotebookLM Quiz →
+                      </a>
+
+                      <img src="ALIQUIPPA_PM.PNG" class="w-full rounded-lg border border-slate-200 shadow-sm">
+
+                      <audio controls class="w-full">
+                        <source src="Aliquippa_PM.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+              </div>
+          </div>
+
+        <!-- ACENSION -->
+        <div id="Acension" class="main-tab scenario6-tab space-y-8 animate-fade-in hidden">
+          <div class="grid gap-6 items-start">
+          <div class="h-full flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              Ascension Healthcare Ransomware (2021)
+            </h3>
+            <p class="text-slate-600" style="color:#e5e7eb">
+              Ransomware disrupted hospital operations and critical patient care systems across the US.
+            </p>
+            
+          <!-- Scenario / Post-Mortem Toggle -->
+                    <div class="flex gap-2 mb-6 p-1 bg-slate-700 rounded-xl w-fit">
+                      <button
+                        class="acension-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="Scenario" data-scenario="Acension"onclick="switchSubTab(this)">Scenario</button>
+                      <button
+                        class="acension-subtab-btn px-4 py-2 rounded-lg text-sm font-semibold bg-black text-white transition" data-tab="PostMortem" data-scenario="Acension"onclick="switchSubTab(this)">Post-Mortem</button>
+                    </div>
+                    <div id="Acension-Scenario" class="acension-subtab space-y-6">
+                      <img src="ACENSION.png" class="w-full rounded-lg border border-slate-200 shadow-sm">
+                      
+                      <audio controls class="w-full">
+                        <source src="Acension.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                    <div id="Acension-PostMortem" class="acension-subtab space-y-6 hidden">
+                      <a
+                        href="https://notebooklm.google.com/notebook/8ce1523e-38f2-40d0-bbbd-5f74b3594eec?artifactId=c238798b-9010-41cd-94f7-720e201e5f11"
+                        target="_blank"
+                        class="inline-block text-sm font-semibold text-blue-400 hover:underline"
+                      >
+                        Open NotebookLM Quiz →
+                      </a>
+
+                      <img src="ACENSION_PM.PNG" class="w-full rounded-lg border border-slate-200 shadow-sm">
+
+                      <audio controls class="w-full">
+                        <source src="Acension_PM.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+              </div>
+          </div>
+      </div>
     </div>
   </div>
 </section>
@@ -2176,25 +2237,46 @@ p, li, div, span, h1, h2, h3, h4, h5, h6 {
             renderMatrix();
         });
         function switchScenarioTab(tabId) {
-        // Hide all scenario panels
-        document.querySelectorAll('.scenario-tab').forEach(tab => {
-          tab.classList.add('hidden');
-        });
+        // Hide all main tabs
+        document.querySelectorAll('.main-tab').forEach(tab => tab.classList.add('hidden'));
 
-        // Remove active styles from all buttons
+        // Remove active styling from all buttons
         document.querySelectorAll('.scenario-btn').forEach(btn => {
-          btn.classList.remove('bg-black', 'text-white', 'shadow-sm');
-          btn.classList.add('text-slate-600');
+          btn.classList.remove('bg-black', 'text-white', 'font-semibold');
+          btn.classList.add('text-slate-500', 'font-medium');
         });
 
-        // Show selected panel
+        // Show selected main tab
         document.getElementById(tabId).classList.remove('hidden');
 
-        // Activate selected button
-        const activeBtn = document.querySelector(`[data-scenario="${tabId}"]`);
-        activeBtn.classList.add('bg-black', 'text-white', 'shadow-sm');
-        activeBtn.classList.remove('text-slate-600');
-      }
+        // Activate clicked button
+        const button = document.querySelector(`.scenario-btn[data-scenario="${tabId}"]`);
+        button.classList.add('bg-black', 'text-white', 'font-semibold');
+        button.classList.remove('text-slate-500', 'font-medium');
+        }
+
+        function switchSubTab(button) {
+        const scenario = button.dataset.scenario; // e.g., "Stuxnet"
+        const tab = button.dataset.tab;           // e.g., "Scenario"
+
+        // Hide all subtabs in this scenario
+        document.querySelectorAll(`.${scenario.toLowerCase()}-subtab`).forEach(el => {
+          el.classList.add('hidden');
+        });
+
+        // Show selected subtab
+        document.getElementById(`${scenario}-${tab}`).classList.remove('hidden');
+
+        // Reset all buttons in this scenario
+        document.querySelectorAll(`.${scenario.toLowerCase()}-subtab-btn`).forEach(btn => {
+          btn.classList.remove('bg-black', 'text-white', 'font-semibold');
+          btn.classList.add('text-slate-300', 'font-medium');
+        });
+
+        // Activate clicked button
+        button.classList.add('bg-black', 'text-white', 'font-semibold');
+        button.classList.remove('text-slate-300', 'font-medium');
+        }
     </script>
 <!-- 
     "/gen?prompt=futuristic+digital+network+map+connecting+singapore+europe+usa+cybersecurity+theme+dark+blue+background&aspect=16:9"
