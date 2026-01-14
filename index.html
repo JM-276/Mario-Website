@@ -2655,6 +2655,23 @@
       /* background-color: #a1a1a181; */
     }
 
+    .GC-level:hover {
+      transform: translateY(-2px);
+      /* background-color: #a1a1a181; */
+    }
+
+    .GC-level {
+      transition: all 0.3s ease;
+    }
+
+    .CG-level:hover {
+      transform: translateX(-4px);
+      /* background-color: #a1a1a181; */
+    }
+
+    .CG-level {
+      transition: all 0.3s ease;
+    }
 
     /* Architecture Diagram Specific Styles */
     .arch-zone {
@@ -10846,11 +10863,11 @@
               class="text-blue-600">Guard</span></span>
         </div>
         <div class="hidden md:flex space-x-8">
-          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition"
+          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level"
             href="#compliance">Global Compliance</a>
-          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition"
+          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level"
             href="#frameworks">Frameworks</a>
-          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition"
+          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level"
             href="#maturity">Maturity Matrix</a>
           <a class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium shadow-md hover:shadow-lg"
             href="#Scenarios">Scenarios</a>
@@ -12905,7 +12922,7 @@
 
     function switchTab(region) {
       document.querySelectorAll('[id^="tab-btn-"]').forEach(btn => {
-        btn.className = "flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all";
+        btn.className = "flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all GC-level";
       });
       document.getElementById(`tab-btn-${region}`).className = "flex-1 py-2 rounded-lg text-sm font-semibold bg-white text-blue-600 shadow-sm transition-all";
 
