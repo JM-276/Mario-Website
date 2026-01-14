@@ -2673,6 +2673,24 @@
       transition: all 0.3s ease;
     }
 
+    .animated-glow {
+      /* color: #fff; */
+      text-align: center;
+      /* Apply the animation */
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    /* Define the animation */
+    @keyframes glow {
+      from {
+        text-shadow: 1px 1px 0px #00ffff, 1px 1px 0px #00ffff, 1px -1px 0px #00ffff, -1px -1px 0px #00ffff, 0px 0px 1px #00ffff, 0px 0px 0px #00ffff;
+      }
+
+      to {
+        text-shadow: 1px 1px 0px #3482F6, 1px 1px 0px #3482F6, 1px -1px 0px #3482F6, -1px -1px 0px #3482F6, 0px 0px 1px #3482F6, 0px 0px 0px #3482F6;
+      }
+    }
+
     /* Architecture Diagram Specific Styles */
     .arch-zone {
       border: 2px dashed;
@@ -10863,11 +10881,11 @@
               class="text-blue-600">Guard</span></span>
         </div>
         <div class="hidden md:flex space-x-8">
-          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level"
+          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level animated-glow"
             href="#compliance">Global Compliance</a>
-          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level"
+          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level animated-glow"
             href="#frameworks">Frameworks</a>
-          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level"
+          <a class="flex items-center text-slate-600 hover:text-blue-600 font-medium transition CG-level animated-glow"
             href="#maturity">Maturity Matrix</a>
           <a class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium shadow-md hover:shadow-lg"
             href="#Scenarios">Scenarios</a>
