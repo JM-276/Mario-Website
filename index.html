@@ -2638,6 +2638,24 @@
       transform: translateX(5px);
     }
 
+    .SL-level {
+      transition: all 0.3s ease;
+    }
+
+    .SL-level:hover {
+      transform: translateX(5px);
+    }
+
+    .MM-level {
+      transition: all 0.3s ease;
+    }
+
+    .MM-level:hover {
+      transform: translateY(-5px);
+      /* background-color: #a1a1a181; */
+    }
+
+
     /* Architecture Diagram Specific Styles */
     .arch-zone {
       border: 2px dashed;
@@ -11585,7 +11603,7 @@
             <h4 class="font-bold text-sm text-slate-300 border-b border-slate-600 pb-2">Security Levels (SL 0 - SL 4)
             </h4>
             <div class="space-y-3">
-              <div class="p-3 bg-slate-700/50 rounded border border-slate-600">
+              <div class="SL-level p-3 bg-slate-700/50 rounded border border-slate-600">
                 <div class="flex justify-between items-center mb-1">
                   <span class="text-slate-400 font-bold text-sm">SL 0: No Protection</span>
                   <span class="text-[10px] bg-slate-600 px-1.5 py-0.5 rounded text-white">None</span>
@@ -11594,7 +11612,7 @@
                 <p class="text-[10px] text-teal-400 mt-1 italic"><strong>Use Case:</strong> A completely isolated demo
                   unit with no network connection.</p>
               </div>
-              <div class="p-3 bg-slate-700/50 rounded border border-slate-600">
+              <div class="SL-level p-3 bg-slate-700/50 rounded border border-slate-600">
                 <div class="flex justify-between items-center mb-1">
                   <span class="text-green-400 font-bold text-sm">SL 1: Casual / Coincidental</span>
                   <span class="text-[10px] bg-green-900 text-green-200 px-1.5 py-0.5 rounded">Mistake</span>
@@ -11603,7 +11621,7 @@
                 <p class="text-[10px] text-teal-400 mt-1 italic"><strong>Use Case:</strong> An employee accidentally
                   connecting a wrong cable or a generic mass-market virus.</p>
               </div>
-              <div class="p-3 bg-slate-700/50 rounded border border-slate-600">
+              <div class="SL-level p-3 bg-slate-700/50 rounded border border-slate-600">
                 <div class="flex justify-between items-center mb-1">
                   <span class="text-yellow-400 font-bold text-sm">SL 2: Simple Intentional</span>
                   <span class="text-[10px] bg-yellow-900 text-yellow-200 px-1.5 py-0.5 rounded">Script Kiddie</span>
@@ -11613,7 +11631,7 @@
                 <p class="text-[10px] text-teal-400 mt-1 italic"><strong>Use Case:</strong> A disgruntled insider with
                   low skills or an attacker using standard downloadable exploit tools (e.g. Metasploit).</p>
               </div>
-              <div class="p-3 bg-slate-700/50 rounded border border-slate-600">
+              <div class="SL-level p-3 bg-slate-700/50 rounded border border-slate-600">
                 <div class="flex justify-between items-center mb-1">
                   <span class="text-orange-400 font-bold text-sm">SL 3: Sophisticated Intentional</span>
                   <span class="text-[10px] bg-orange-900 text-orange-200 px-1.5 py-0.5 rounded">Professional</span>
@@ -11623,7 +11641,7 @@
                 <p class="text-[10px] text-teal-400 mt-1 italic"><strong>Use Case:</strong> A targeted attack by a
                   hacktivist group or professional cybercrime gang (e.g., targeted Ransomware).</p>
               </div>
-              <div class="p-3 bg-slate-700/50 rounded border border-slate-600 shadow-lg shadow-red-900/20">
+              <div class="SL-level p-3 bg-slate-700/50 rounded border border-slate-600 shadow-lg shadow-red-900/20">
                 <div class="flex justify-between items-center mb-1">
                   <span class="text-red-400 font-bold text-sm">SL 4: Nation State</span>
                   <span class="text-[10px] bg-red-900 text-red-200 px-1.5 py-0.5 rounded">APT</span>
@@ -11761,8 +11779,8 @@
         </div>
         <!-- Main Content: Processes Accordion -->
         <div class="lg:w-3/4 space-y-4" id="matrix-container">
-          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-            <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-slate-50 hover:bg-slate-100"
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-slate-50"
               onclick="toggleAccordion(1)">
               <span class="font-bold text-lg text-slate-800">1. OT Asset Management</span>
               <span class="material-symbols-outlined text-slate-400" id="icon-1">expand_more</span>
@@ -13126,8 +13144,8 @@
     function renderMatrix() {
       const container = document.getElementById('matrix-container');
       container.innerHTML = maturityProcesses.map(proc => `
-                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-slate-50 hover:bg-slate-100" onclick="toggleAccordion(${proc.id})">
+                <div class="MM-level bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-slate-50" onclick="toggleAccordion(${proc.id})">
                         <span class="font-bold text-lg text-slate-800">${proc.title}</span>
                         <span class="material-symbols-outlined text-slate-400" id="icon-${proc.id}">expand_more</span>
                     </button>
