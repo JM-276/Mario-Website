@@ -13233,6 +13233,9 @@
       const button = document.querySelector(`.scenario-btn[data-scenario="${tabId}"]`);
       button.classList.add('bg-black', 'text-white', 'font-semibold');
       button.classList.remove('text-slate-500', 'font-medium');
+
+      // Pause any playing audio
+      pauseAudio();
     }
 
     function switchSubTab(button) {
@@ -13256,7 +13259,18 @@
       // Activate clicked button
       button.classList.add('bg-black', 'text-white', 'font-semibold');
       button.classList.remove('text-slate-300', 'font-medium');
+
+      // Pause any playing audio
+      pauseAudio();
     }
+
+    // Pause Audio when switching tabs
+    function pauseAudio() {
+      document.querySelectorAll('audio').forEach(audio => {
+        audio.pause();
+        // audio.currentTime = 0;
+      });
+    } 
   </script>
   <!-- 
     "/gen?prompt=futuristic+digital+network+map+connecting+singapore+europe+usa+cybersecurity+theme+dark+blue+background&aspect=16:9"
