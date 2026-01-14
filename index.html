@@ -2666,12 +2666,32 @@
       /* Indicates the text is interactive */
     }
 
-    .GC-level:hover {
+    .RS-level:hover {
       /* The emboss effect is applied here */
       text-shadow:
         2px 2px 4px rgba(0, 0, 0, 0.5),
         /* Darker shadow for depth */
         -2px -2px 4px rgba(255, 255, 255, 0.5);
+      /* Lighter highlight for the raised look */
+    }
+
+    .RS-level {
+      font-size: 80px;
+      font-weight: bold;
+      color: #000000;
+      /* Text color should match the background initially */
+      transition: text-shadow 0.3s ease;
+      /* Smooth transition for the effect */
+      cursor: pointer;
+      /* Indicates the text is interactive */
+    }
+
+    .GC-level:hover {
+      /* The emboss effect is applied here */
+      text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.5),
+        /* Darker shadow for depth */
+        -2px -2px 4px rgba(255, 255, 255, 0.9);
       /* Lighter highlight for the raised look */
     }
 
@@ -2698,7 +2718,7 @@
       }
 
       to {
-        text-shadow: 1px 1px 0px #3482F6, 1px 1px 0px #3482F6, 1px -1px 0px #3482F6, -1px -1px 0px #3482F6, 0px 0px 1px #3482F6, 0px 0px 0px #3482F6;
+        text-shadow: 1px 1px 0px #ffffff, 1px 1px 0px #ffffff, 1px -1px 0px #ffffff, -1px -1px 0px #ffffff, 0px 0px 1px #ffffff, 0px 0px 0px #ffffff;
       }
     }
 
@@ -12561,27 +12581,27 @@
       <!-- Tabs -->
       <div class="flex justify-center gap-2 mb-8 p-1 bg-slate-100 rounded-xl inline-flex mx-auto w-full">
         <button
-          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-semibold bg-black text-white shadow-sm transition-all"
+          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-semibold bg-black text-white shadow-sm transition-all RS-level"
           data-scenario="Stuxnet" onclick="switchScenarioTab('Stuxnet')">Stuxnet</button>
 
         <button
-          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all"
+          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all RS-level"
           data-scenario="Trisis" onclick="switchScenarioTab('Trisis')">Trisis</button>
 
         <button
-          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all"
+          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all RS-level"
           data-scenario="Pipedream" onclick="switchScenarioTab('Pipedream')">Pipedream</button>
 
         <button
-          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all"
+          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all RS-level"
           data-scenario="Crucible" onclick="switchScenarioTab('Crucible')">Crucible</button>
 
         <button
-          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all"
+          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all RS-level"
           data-scenario="Aliquippa" onclick="switchScenarioTab('Aliquippa')">Aliquippa</button>
 
         <button
-          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all"
+          class="scenario-btn flex-1 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 transition-all RS-level"
           data-scenario="Acension" onclick="switchScenarioTab('Acension')">Acension</button>
       </div>
 
