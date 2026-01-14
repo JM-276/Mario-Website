@@ -2655,13 +2655,24 @@
       /* background-color: #a1a1a181; */
     }
 
-    .GC-level:hover {
-      transform: translateY(-2px);
-      /* background-color: #a1a1a181; */
+    .GC-level {
+      font-size: 80px;
+      font-weight: bold;
+      color: #cccccc;
+      /* Text color should match the background initially */
+      transition: text-shadow 0.3s ease;
+      /* Smooth transition for the effect */
+      cursor: pointer;
+      /* Indicates the text is interactive */
     }
 
-    .GC-level {
-      transition: all 0.3s ease;
+    .GC-level:hover {
+      /* The emboss effect is applied here */
+      text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.5),
+        /* Darker shadow for depth */
+        -2px -2px 4px rgba(255, 255, 255, 0.5);
+      /* Lighter highlight for the raised look */
     }
 
     .CG-level:hover {
